@@ -4,7 +4,7 @@ import styles from '../../styles/Detail.css';
 import { useParams } from 'react-router-dom';
 
 const spinner =
-  'https://c.tenor.com/yalDO5GyNA8AAAAC/screaming-sun-rick-and-morty.gif';
+  'https://thumbs.gfycat.com/MagnificentRectangularFinch-size_restricted.gif';
 
 const Detail = () => {
   const { id } = useParams();

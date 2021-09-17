@@ -5,7 +5,7 @@ import { manyCharactersUtility } from '../../hooks/manyCharactersUtility';
 import styles from '../../styles/List.css';
 
 const spinner =
-  'https://c.tenor.com/yalDO5GyNA8AAAAC/screaming-sun-rick-and-morty.gif';
+  'https://thumbs.gfycat.com/MagnificentRectangularFinch-size_restricted.gif';
 
 const List = () => {
   const { loading, characters } = manyCharactersUtility();

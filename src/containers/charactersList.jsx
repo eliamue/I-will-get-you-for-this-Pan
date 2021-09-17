@@ -3,7 +3,7 @@ import { manyCharactersUtility } from '../hooks/manyCharactersUtility';
 import List from '../components/characters/List';
 
 const spinner =
-  'https://c.tenor.com/yalDO5GyNA8AAAAC/screaming-sun-rick-and-morty.gif';
+  'https://thumbs.gfycat.com/MagnificentRectangularFinch-size_restricted.gif';
 
 const charactersList = () => {
   const { loading, characters } = manyCharactersUtility();

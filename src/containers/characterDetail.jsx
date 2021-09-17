@@ -4,7 +4,7 @@ import Detail from '../components/characters/Detail';
 import { oneCharacterUtility } from '../hooks/oneCharacterUtility';
 
 const spinner =
-  'https://c.tenor.com/yalDO5GyNA8AAAAC/screaming-sun-rick-and-morty.gif';
+  'https://thumbs.gfycat.com/MagnificentRectangularFinch-size_restricted.gif';
 
 const characterDetail = () => {
   const { id } = useParams();
