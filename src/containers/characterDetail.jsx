@@ -10,7 +10,7 @@ const characterDetail = () => {
   const { id } = useParams();
   const { loading, character } = oneCharacterUtility(id);
 
-  if (loading) return <img src={spinner} alt="Loading" />;
+  if(loading) return <img src={spinner} alt="Loading" />;
 
   return (
     <>

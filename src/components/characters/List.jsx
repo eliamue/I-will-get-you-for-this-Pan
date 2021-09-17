@@ -20,10 +20,10 @@ List.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      name: PropTypes.string,
+      image: PropTypes.string,
     })
-  ).isRequired,
+  )
 };
 
 export default List;

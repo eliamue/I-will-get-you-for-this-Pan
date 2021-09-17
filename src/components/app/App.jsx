@@ -1,7 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Detail from '../characters/Detail';
-import List from '../characters/List';
+
+const About = ({ match, location, history }) => {
+  return <p>About</p>;
+};
 
 export default function App() {
   return (
@@ -9,9 +12,7 @@ export default function App() {
       <Route exact path="/:id">
         <Detail />
       </Route>
-      <Route exact path="/">
-        <List />
-      </Route>
+      <Route exact path="/about" component={About} />
     </Switch>
   );
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Detail.css';
+import styles from '../../styles/Detail.css';
 
-const Detail = ({ name, gender, status, species, image, origin }) => (
+const Detail = ({ name, gender, status, species, image, origin, location }) => (
   <figure className={styles.chardeets}>
     <img className={styles.charimg} src={image} alt={name} />
     <figcaption>
@@ -12,17 +12,19 @@ const Detail = ({ name, gender, status, species, image, origin }) => (
         {gender} {species}
       </h4>
       <p>Place of Origin: {origin}</p>
+      <p>Current Location: {location}</p>
     </figcaption>
   </figure>
 );
 
 Detail.propTypes = {
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
-  gender: PropTypes.string.isRequired,
-  species: PropTypes.string.isRequired,
-  origin: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  status: PropTypes.string,
+  gender: PropTypes.string,
+  species: PropTypes.string,
+  origin: PropTypes.string,
+  location: PropTypes.string,
 };
 
 export default Detail;
