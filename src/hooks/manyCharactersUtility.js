@@ -6,11 +6,9 @@ export const manyCharactersUtility = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    setLoading(true);
     fetchManyCharacters()
-      .then((res) => {
-        setCharacters(res.characters);
-      })
+      .then((res) => setCharacters(res)
+      )
       .finally(() => setLoading(false));
   });
   return { loading, characters };
