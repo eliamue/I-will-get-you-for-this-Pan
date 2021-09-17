@@ -1,11 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import styles from './App.css';
+import Detail from '../characters/Detail';
+import List from '../characters/List';
 
 export default function App() {
-  return <Switch>
-    <Route>
-
-    </Route>
-  </Switch>;
+  return (
+    <Switch>
+      <Route exact path="/:id">
+        <Detail />
+      </Route>
+      <Route exact path="/">
+        <List />
+      </Route>
+    </Switch>
+  );
 }
