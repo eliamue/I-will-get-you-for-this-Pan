@@ -1,5 +1,6 @@
-.chardeets {
-    background-color: rgb(135, 192, 218);
+header {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     align-self: center;
     align-content: center;
@@ -7,8 +8,4 @@
     justify-self: center;
     justify-items: center;
     text-align: center;
-    padding: 20px;
-    margin: 15px;
-    border: 5px green double;
-    border-radius: 20px;
 }
