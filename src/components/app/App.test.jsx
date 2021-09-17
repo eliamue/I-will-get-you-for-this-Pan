@@ -29,9 +29,6 @@ describe('App', () => {
 
     screen.getByAltText('Loading');
 
-    const ul = await screen.findByRole('list', { name: 'characters' });
-    expect(ul).not.toBeEmptyDOMElement();
-
     const li = await screen.findByText('Beth Smith');
     expect(li).toBeInTheDocument();
   });
