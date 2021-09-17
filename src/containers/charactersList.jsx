@@ -1,6 +1,5 @@
 import React from 'react';
 import { manyCharactersUtility } from '../hooks/manyCharactersUtility';
-import Controls from '../components/characters/Controls';
 import List from '../components/characters/List';
 
 const spinner =
@@ -13,7 +12,6 @@ const charactersList = () => {
 
   return (
     <>
-      <Controls />
       <List characters={characters} />
     </>
   );
